@@ -1,0 +1,72 @@
+@import "../../../../../Colors";
+@import "../../../../../Common";
+
+.wrapper {
+  max-width: 700px;
+  margin: 20px 0;
+  background-color: $blueDark;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockPost {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 1fr 1fr 20px;
+  grid-template-areas:
+          "tag date"
+          "header header"
+          "content content"
+          "author comment";
+  padding: 30px;
+}
+
+.image {
+  border-radius: 12px 0 0 12px;
+  object-fit: cover;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.tag {
+  grid-area: tag;
+  @extend %tag;
+}
+
+.date {
+  @extend %date;
+}
+
+.header {
+  grid-area: header;
+  padding: 10px 0;
+}
+
+.link {
+  font-family: 'Agency FB', sans-serif;
+  @extend %middleHeader;
+}
+
+.description {
+  grid-area: content;
+  @extend %standartFont;
+}
+
+.icon {
+  color: $cyan;
+  padding-right: 5px;
+}
+
+.author {
+  grid-area: author;
+  font-size: 14px;
+}
+
+.comment {
+  grid-area: comment;
+  font-size: 14px;
+  text-align: right;
+}

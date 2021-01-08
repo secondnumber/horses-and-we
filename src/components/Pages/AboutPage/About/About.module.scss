@@ -1,0 +1,70 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.wrapper {
+  background-color: $blueDarkDeep;
+}
+
+.aboutBlock {
+  @include block(60vw, 100px 0, space-around);
+}
+
+.headers {
+  position: relative;
+  width: 100%;
+  min-height: 80px;
+  margin: 0px auto;
+}
+
+.number {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  @extend %hugeHeader;
+}
+
+.subtitle {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 65px;
+  text-align: center;
+  font-family: "Agency FB", sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.title {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 65px;
+  text-align: center;
+  font-family: "Agency FB", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.textBlock {
+  padding: 100px 30px 0 0;
+}
+
+.text {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  @extend %standartFont;
+}
+
+.label {
+  padding-left: 50px;
+  line-height: 1.8;
+  @extend %standartFont;
+  background-image: url("../../../../assets/AboutPage/tick.png");
+  background-repeat: no-repeat;
+  background-position: 20px;
+}

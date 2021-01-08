@@ -1,0 +1,64 @@
+@import '../../../Colors';
+@import '../../../Common';
+
+.header {
+    position: fixed;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100vw;
+    max-width: 100%;
+    height: 120px;
+    background-color: $blueDarkDeep;
+    box-shadow: 3.5px 6.1px 30px $shadow;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.image {
+    width: 124px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title {
+    @extend %bigHeader;
+    letter-spacing: 3px;
+}
+
+.label {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.utility {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.searchImage {
+    margin-right: 20px;
+}
+
+.icon {
+    padding-right: 30px;
+    font-size: 24px;
+    color: $white;
+}
+
+.icon:hover {
+    color: $cyan;
+    @extend %hover;
+}

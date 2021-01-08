@@ -1,0 +1,15 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.item {
+    margin: 0 10px;
+}
+
+.button {
+    @include button(60px, transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $white);
+}
+
+.current {
+    @include button(60px, linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
+}
+

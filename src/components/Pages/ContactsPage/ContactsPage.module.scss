@@ -1,0 +1,45 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.wrapper {
+  @include wrapper($blueDarkDeep);
+}
+
+.block {
+  @include block(65vw, 0, space-between);
+}
+
+.info {
+  flex-basis: 45%;
+}
+
+.form {
+  padding-top: 80px;
+  flex-basis: 45%;
+}
+
+.map {
+  width: 65vw;
+  margin: 0 auto;
+  padding: 60px 0 100px 0;
+}
+
+.contactsList {
+  list-style-type: none;
+}
+
+.socialList {
+  @include list(flex-start, center);
+  padding-top: 50px;
+}
+
+.title {
+  padding: 80px 0 40px 0;
+  @extend %bigHeader;
+}
+
+.description {
+  padding-bottom: 50px;
+  line-height: 200%;
+  font-size: 18px;
+}

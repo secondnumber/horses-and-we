@@ -1,0 +1,31 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.header {
+  padding-bottom: 20px;
+  text-align: center;
+  @extend  %middleHeader;
+}
+
+.list {
+  padding-bottom: 40px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 110px;
+  height: 110px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.image:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}

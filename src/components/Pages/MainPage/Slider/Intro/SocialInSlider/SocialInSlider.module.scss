@@ -1,0 +1,15 @@
+@import '../../../../../../Colors';
+
+.item {
+  margin: 10px;
+}
+
+.icon {
+  padding: 10px 0;
+  color: $white;
+}
+
+.icon:hover {
+  color: $cyan;
+  cursor: pointer;
+}

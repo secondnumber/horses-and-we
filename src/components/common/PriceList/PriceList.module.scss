@@ -1,0 +1,22 @@
+@import '../../../Colors';
+@import '../../../Common';
+
+.wrapper {
+    @include wrapper($black);
+}
+
+.block {
+    @include block(70vw, 0 0 80px 0, space-between);
+}
+
+.header {
+    @extend %shadowHeader;
+}
+
+.subtitle {
+    @extend %shadowSubtitle;
+}
+
+.title {
+    @extend %shadowTitle;
+}

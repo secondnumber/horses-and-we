@@ -1,0 +1,11 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.wrapper {
+  @include wrapper($black);
+}
+
+.block {
+  @include block(70vw, 100px 0, space-between);
+  flex-wrap: wrap;
+}

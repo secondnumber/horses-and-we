@@ -1,0 +1,64 @@
+@import '../../../../../Colors';
+@import '../../../../../Common';
+
+.block {
+    grid-area: video;
+    height: 573px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video {
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+    height: 573px;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    bottom: 40px;
+}
+
+.button {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.svg {
+    fill: $cyan;
+}
+
+.header {
+    @extend %middleHeader;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.item {
+    padding: 10px 10px 0 0;
+    color: $white;
+}
+
+.image {
+    border-radius: 50%;
+}

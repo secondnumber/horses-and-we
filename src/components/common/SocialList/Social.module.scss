@@ -1,0 +1,15 @@
+@import '../../../Colors';
+
+.socialList {
+  list-style-type: none;
+}
+
+.link {
+  margin: 30px 5px;
+  padding: 20px 15px;
+  color: $white;
+}
+
+.link:hover {
+  color: $cyan;
+}

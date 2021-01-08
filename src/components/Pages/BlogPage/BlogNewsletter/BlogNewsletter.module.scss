@@ -1,0 +1,18 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.wrapper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.header {
+  padding-bottom: 20px;
+  text-align: center;
+  @extend %middleHeader;
+}
+
+.block {
+  width: 320px;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,24 @@
+@import '../../../../Colors';
+
+.filter {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+   margin: 0 20px;
+   padding: 0 20px;
+   display: block;
+   width: 150px;
+   height: 60px;
+   background-color: $blueDark;
+   border: none;
+   border-radius: 10px;
+   color: $blueLight;
+   outline: none;
+   appearance: none;
+   background-image: url("../../../../assets/Common/downArrow.svg");
+   background-repeat: no-repeat;
+   background-position: center right 15px;
+ }

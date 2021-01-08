@@ -1,0 +1,32 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.wrapper {
+    @include wrapper($blueDarkDeep);
+    padding: 40px 0 80px 0;
+}
+
+.block {
+    @include block(70vw, 0, center);
+    flex-wrap: wrap;
+}
+
+.headers {
+    @extend %shadowHeader;
+}
+
+.subtitle {
+    @extend %shadowSubtitle;
+}
+
+.title {
+    @extend %shadowTitle;
+}
+
+.caption {
+    padding-bottom: 50px;
+    max-width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    @extend %standartFont;
+}

@@ -1,0 +1,28 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.form {
+    position: relative;
+}
+
+.input {
+    @extend %input;
+    width: 100%;
+}
+
+
+.button {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    background-color: transparent;
+    color: $cyan;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: $lilac;
+    cursor: pointer;
+}

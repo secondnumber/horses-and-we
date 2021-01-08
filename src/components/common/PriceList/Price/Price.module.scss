@@ -1,0 +1,76 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-width: 350px;
+    min-height: 470px;
+    background-color: $blueDark;
+    border-radius: 12px;
+}
+
+.header {
+    text-align: center;
+    @extend %middleHeader;
+}
+
+.value {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.currency {
+    text-align: center;
+    @extend %middleHeader;
+}
+
+.integer {
+    padding-top: 20px;
+    @extend %bigHeader;
+}
+
+.fraction {
+    padding-top: 20px;
+    @extend %middleHeader;
+}
+
+.period {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.cyan {
+background-color: $cyan;
+}
+
+.blue {
+background-color: $blue;
+}
+
+.lilac {
+background-color: $lilac;
+}
+
+.features {
+    max-width: 70%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.feature {
+    padding: 20px 0;
+    border-bottom: 1px solid $blue;
+}
+
+.feature:last-child {
+    border-bottom: none;
+}
+
+.btnBlock {
+    margin: 0 auto;
+}

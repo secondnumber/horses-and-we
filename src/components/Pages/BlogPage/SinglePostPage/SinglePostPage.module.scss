@@ -1,0 +1,12 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.wrapper {
+  padding: 100px 0;
+  @include wrapper($blueDarkDeep);
+}
+
+.block {
+  width: 50vw;
+  margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 55px;
+  padding-bottom: 20px;
+  object-fit: contain;
+}
+
+.counter {
+  @extend %bigHeader;
+}
+
+.label {
+  @extend %standartFont;
+  text-transform: uppercase;
+  color: $white;
+}

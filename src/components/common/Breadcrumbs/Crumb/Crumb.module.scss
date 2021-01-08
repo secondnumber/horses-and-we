@@ -1,0 +1,15 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.linksItem {
+    padding: 5px;
+}
+
+.link {
+    @extend %linkFont;
+    padding: 20px 0;
+}
+
+.separator {
+    color: $white;
+}

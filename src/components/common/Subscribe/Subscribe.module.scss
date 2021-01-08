@@ -1,0 +1,56 @@
+@import '../../../Colors';
+@import '../../../Common';
+
+.wrapper {
+    min-height: 250px;
+    @include wrapper(linear-gradient(90deg, $cyan, $lilac));
+}
+
+.block {
+    @include block(70vw, 0, center);
+    min-height: 250px;
+}
+
+.header {
+    position: relative;
+    width: 30vw;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.subtitle {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    font-family: "Agency FB", sans-serif;
+    font-size: 88px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparentize($white, 0.9);
+}
+
+.title {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    font-family: "Agency FB", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+}
+
+.caption {
+    position: absolute;
+    top: 90px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: $white;
+}
+
+.inputBlock {
+    width: 500px;
+}

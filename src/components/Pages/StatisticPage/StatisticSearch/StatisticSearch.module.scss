@@ -1,0 +1,15 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.form {
+  flex-basis: 30%;
+}
+
+.input {
+  @extend %input;
+  width: 100%;
+}
+
+.input:focus {
+  border: 1px solid $lilac;
+}

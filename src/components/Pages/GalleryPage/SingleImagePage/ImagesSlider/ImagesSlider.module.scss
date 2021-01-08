@@ -1,0 +1,23 @@
+@import '../../../../../Colors';
+@import '../../../../../Common';
+
+.imageItem {
+
+}
+
+.image {
+  object-fit: cover;
+}
+
+.tag {
+  padding-top: 15px;
+  display: block;
+  text-align: center;
+  @extend %tag;
+}
+
+.title {
+  padding-top: 10px;
+  text-align: center;
+  @extend %smallHeader;
+}

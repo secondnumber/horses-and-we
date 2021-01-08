@@ -1,0 +1,220 @@
+@import "./Colors";
+
+@mixin wrapper($background) {
+  width: 100vw;
+  max-width: 100%;
+  background: $background;
+}
+
+@mixin block($width, $padding, $justify, $align: center) {
+  margin: 0 auto;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  width: $width;
+  padding: $padding;
+}
+
+@mixin list($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  list-style-type: none;
+}
+
+%shadowHeader {
+  position: relative;
+  width: 80vw;
+  min-height: 100px;
+  margin: 0px auto;
+  padding: 80px 0 20px 0;
+}
+
+%shadowSubtitle {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-family: "Agency FB", sans-serif;
+  font-size: 88px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $textShadow;
+}
+
+%shadowTitle {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  font-family: "Agency FB", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%hugeHeader {
+  font-family: "Agency FB", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%bigHeader {
+  font-family: 'Agency FB', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%middleHeader {
+  font-family: 'Agency FB', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%smallHeader {
+  font-family: 'Agency FB', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+%standartFont {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $blueLight;
+}
+
+%tag {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $cyan;
+}
+
+%date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $blueLight;
+  text-align: right;
+}
+
+%hover {
+  cursor: pointer;
+}
+
+%linkFont {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  &:hover {
+    @extend %hover;
+    color: $cyan;
+  }
+}
+
+%quoteBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 565px;
+  background-color: $black;
+  border-radius: 12px;
+  background-image: url("./assets/Common/quote-left.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+@mixin button($width, $background, $backgroundHover, $border, $borderHover, $color, $colorHover) {
+  width: $width;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: $background;
+  color: $color;
+  border: $border;
+  border-radius: 10px;
+  outline: none;
+  &:hover {
+    @extend %hover;
+    background: $backgroundHover;
+    border: $borderHover;
+    color: $colorHover;
+  }
+}
+
+%placeholder {
+  color: $blueLight;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+%placeholderFocus {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+%input {
+  box-sizing: border-box;
+  height: 60px;
+  padding-left: 20px;
+  color: $blueLight;
+  background: $blueDark;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  &::placeholder {
+    @extend %placeholder;
+  }
+  &:focus::placeholder {
+    @extend %placeholderFocus;
+  }
+}
+
+%textarea {
+  box-sizing: border-box;
+  margin: 25px 0 0 0;
+  padding: 20px 0 0 20px;
+  color: $blueLight;
+  background: $blueDark;
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+  &::placeholder {
+    @extend %placeholder;
+  }
+  &:focus::placeholder {
+    @extend %placeholderFocus;
+  }
+}
+
+%toggle {
+  background: none;
+  border: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.wrapper {
+  padding: 80px 0;
+  @include wrapper($blueDarkDeep);
+}
+
+.block {
+  @include block(65vw, 0, space-between, flex-start);
+}
+
+.questions {
+  flex-basis: 50%;
+}
+
+.form {
+  flex-basis: 45%;
+}
+
+.title {
+  @extend %middleHeader;
+}

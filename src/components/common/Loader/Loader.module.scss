@@ -1,0 +1,13 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}

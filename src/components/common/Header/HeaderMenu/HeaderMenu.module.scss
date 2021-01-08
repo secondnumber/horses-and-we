@@ -1,0 +1,16 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.item {
+   position: relative;
+    z-index: 2;
+}
+
+.link {
+    padding: 60px 30px;
+    @extend %linkFont;
+}
+
+.active {
+    color: $lilac;
+}

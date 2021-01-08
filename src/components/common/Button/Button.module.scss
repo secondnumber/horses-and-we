@@ -1,0 +1,21 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.buttonGradient {
+  @include button(200px, linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
+}
+
+.buttonGradientSquare {
+  @include button(60px, linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);
+}
+.buttonContour {
+  @include button(200px, transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $white);
+}
+
+.buttonContourSquare {
+  @include button(60px, transparent, $cyan, 2px solid $lilac, 2px solid $cyan, $white, $white);
+}
+
+.buttonWhite {
+  @include button(200px, $white, $cyan, none, none, $cyan, $white);
+}

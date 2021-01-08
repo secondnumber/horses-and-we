@@ -1,0 +1,41 @@
+@import '../../../../../Colors';
+@import '../../../../../Common';
+
+.list {
+  position: absolute;
+  z-index: 1;
+  min-width: 180px;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparentize($blueDarkDeep, 0.1);
+  box-shadow: 3.5px 6.1px 30px $shadow;
+  border-radius: 0 0 12px 12px;
+  list-style-type: none;
+  transition: all 0.3s ease-out;
+}
+
+.item {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid transparentize($white, 0.8);
+}
+
+.item:nth-child(1) {
+  padding-top: 40px;
+}
+
+.item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.link {
+  padding: 10px 0;
+  @extend %linkFont;
+}
+
+.active:active {
+  color: $lilac;
+}

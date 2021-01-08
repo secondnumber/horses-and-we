@@ -1,0 +1,40 @@
+@import "../../../../Colors";
+
+.wrapper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.header {
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+.list {
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.icon {
+  flex-basis: 10%;
+  color: $lilac;
+}
+
+.text {
+  flex-basis: 85%;
+}
+
+.link {
+  text-decoration: none;
+  color: $lilac;
+}
+
+.link:hover {
+  color: $cyan;
+}

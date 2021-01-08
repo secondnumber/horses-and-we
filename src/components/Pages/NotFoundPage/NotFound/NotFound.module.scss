@@ -1,0 +1,72 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blueDarkDeep;
+}
+
+.numbersBlock {
+  display: grid;
+  grid-template-columns: 130px 130px 130px;
+  grid-template-rows: 320px 60px 75px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.number {
+  font-family: 'Agency FB', sans-serif;
+  font-size: 300px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $cyan;
+}
+
+.zero {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 110px;
+  height: 240px;
+  background-color: $cyan;
+  border-radius: 15px;
+}
+
+.inset {
+  position: absolute;
+  padding: 10px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blueDarkDeep;
+}
+
+.text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.btnBlock {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}

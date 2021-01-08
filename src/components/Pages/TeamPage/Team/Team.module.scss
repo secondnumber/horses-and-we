@@ -1,0 +1,72 @@
+@import "../../../../Colors";
+
+.block {
+  width: 360px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $blueDark;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.imageBlock {
+  position: relative;
+  margin-bottom: 30px;
+  width: 360px;
+  height: 310px;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(90deg, $cyan, $lilac);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 310px;
+  padding-bottom: 30px;
+  border-radius: 15px 15px 0 0;
+}
+
+.image:hover {
+  opacity: 0.5;
+}
+
+.name {
+  padding-bottom: 10px;
+  font-family: 'Agency FB', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $white;
+}
+
+.name:hover {
+  color: $cyan;
+}
+
+.rank {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: $blue;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+}
+
+.item {
+  padding: 10px;
+}
+
+.link {
+  color: $white;
+}
+
+.link:hover {
+  color: $cyan;
+}

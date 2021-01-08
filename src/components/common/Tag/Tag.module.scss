@@ -1,0 +1,6 @@
+@import '../../../Colors';
+@import '../../../Common';
+
+.tag {
+  @extend %linkFont;
+}

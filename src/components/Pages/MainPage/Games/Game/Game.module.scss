@@ -1,0 +1,75 @@
+@import '../../../../../Colors';
+@import '../../../../../Common';
+
+.wrapper {
+    @include wrapper($blueDarkDeep);
+    margin: 40px 0 0 0;
+    padding-bottom: 60px;
+}
+
+.block {
+    position: relative;
+    display: grid;
+    width: 60vw;
+    height: 600px;
+    grid-template-columns: 1fr 10fr 1fr 10fr 1fr;
+    grid-template-rows: 65px 1fr 65px;
+    grid-template-areas:
+            ". . . . ."
+            ". content . image ."
+            ". . . . .";
+    margin: 0 auto;
+    background-color: $blueDark;
+    border-radius: 12px;
+}
+
+.contentBlock {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px 40px 1fr 80px;
+    grid-template-areas:
+            "tags date"
+            "title title"
+            "description description"
+            "button stars";
+}
+
+.imageBlock {
+    grid-area: image;
+}
+
+.tags {
+    grid-area: tags;
+    @extend %tag;
+}
+
+.date {
+    grid-area: date;
+    @extend %date;
+}
+
+.title {
+    grid-area: title;
+    padding-top: 10px;
+    @extend %middleHeader;
+}
+
+.description {
+    grid-area: description;
+    padding-top: 30px;
+    @extend %standartFont;
+}
+
+.stars {
+    grid-area: stars;
+    padding-top: 20px;
+    text-align: right;
+    color: orange;
+}
+
+.image {
+    position: absolute;
+    right: -60px;
+    border-radius: 12px;
+}

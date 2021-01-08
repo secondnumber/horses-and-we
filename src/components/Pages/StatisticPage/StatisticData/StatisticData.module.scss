@@ -1,0 +1,10 @@
+@import '../../../../Colors';
+
+.row {
+  background-color: $blueDark;
+  border-bottom: 1px solid $blueDarkDeep;
+}
+
+.cell {
+  padding: 40px 20px;
+}

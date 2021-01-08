@@ -1,0 +1,12 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.wrapper {
+  @include wrapper($blueDarkDeep);
+  padding: 80px 0;
+}
+
+.block {
+  @include block(80vw, 0, center);
+  flex-wrap: wrap;
+}

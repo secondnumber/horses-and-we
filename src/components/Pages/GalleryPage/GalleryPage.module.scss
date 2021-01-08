@@ -1,0 +1,34 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.extraWrapper {
+  position: relative;
+}
+
+.wrapper {
+  padding: 100px 0;
+  @include wrapper($blueDarkDeep);
+}
+
+.tagsList {
+  width: 40vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  @include list(space-around, center);
+  flex-wrap: wrap;
+}
+
+.imagesList {
+  width: 65vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  @include list(center, center);
+  flex-wrap: wrap;
+}
+
+.numbersList {
+  @include list(center, center);
+}
+
+
+

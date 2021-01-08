@@ -1,0 +1,50 @@
+@import "../../../../Colors";
+@import "../../../../Common";
+
+.wrapper {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.header {
+  padding-bottom: 20px;
+  text-align: center;
+  @extend %middleHeader;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.image {
+  flex-basis: 70px;
+}
+
+.content {
+  flex-basis: 70%;
+}
+
+.title {
+  @extend %smallHeader;
+}
+
+.link {
+  text-decoration: none;
+  color: $white;
+}
+
+.link:hover {
+  color: $cyan;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 700;
+  color: $blueLight;
+}

@@ -1,0 +1,40 @@
+@import '../../../../Common';
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 550px;
+    margin: 100px 15px 0 15px;
+    background-color: $black;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.image {
+    position: absolute;
+    top: -60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.header {
+    padding-top: 80px;
+    @extend %middleHeader;
+}
+
+.status {
+    padding-top: 10px;
+    text-align: center;
+    @extend %tag;
+}
+
+.description {
+    padding: 20px 30px 50px 30px;
+    text-align: center;
+    @extend %standartFont;
+}

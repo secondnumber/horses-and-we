@@ -1,0 +1,11 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.wrapper {
+    @include wrapper($black);
+    height: 100vh;
+    background-image: url("../../../../assets/Slider/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+}

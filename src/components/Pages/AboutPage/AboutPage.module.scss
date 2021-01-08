@@ -1,0 +1,13 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.wrapper {
+  @include  wrapper($blueDarkDeep);
+  background-image: url('../../../assets/AboutPage/about-bg.jpg');
+}
+
+.list {
+  height: 380px;
+  @include list(space-around, stretch);
+  background-color: transparentize($blueDarkDeep, 0.1);
+}

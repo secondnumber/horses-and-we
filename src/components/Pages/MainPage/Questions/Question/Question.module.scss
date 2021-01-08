@@ -1,0 +1,46 @@
+@import '../../../../../Colors';
+@import '../../../../../Common';
+
+.wrapper {
+    width: 45%;
+    display: flex;
+}
+
+.wrapper:nth-child(-n+2) {
+    border-bottom: 1px solid $blueDark;
+}
+
+.wrapper:nth-child(odd) {
+    border-right: 1px solid $blueDark;
+}
+
+.round {
+    min-width: 100px;
+    height: 100px;
+    margin: 30px 0 0 30px;
+    text-align: center;
+    background: linear-gradient(90deg, $cyan, $lilac);
+    border-radius: 50%;
+}
+
+.number {
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+    @extend %bigHeader;
+}
+
+.title {
+    padding: 25px 0;
+    @extend %middleHeader;
+}
+
+.description {
+    @extend %standartFont;
+}
+
+.content {
+    padding: 0 30px 40px 30px;
+    top: 0;
+    left: 100px;
+}

@@ -1,0 +1,37 @@
+@import '../../../../Colors';
+@import '../../../../Common';
+
+.wrapper {
+    padding: 50px 0 100px 0;
+    @include wrapper($blueDarkDeep);
+}
+
+.headers {
+    @extend %shadowHeader;
+}
+
+.subtitle {
+    @extend %shadowSubtitle;
+}
+
+.title {
+    @extend %shadowTitle;
+}
+
+
+.block {
+    @include block(80vw, 0, space-between, center);
+}
+
+.icon {
+    color: $cyan;
+    &:hover {
+        color: $lilac;
+    }
+}
+
+.toggle {
+    height: 30px;
+    width: 20px;
+    @extend %toggle;
+}

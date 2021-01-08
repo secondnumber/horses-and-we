@@ -1,0 +1,73 @@
+@import '../../../../../Colors';
+@import '../../../../../Common';
+
+.wrapper {
+    max-width: 350px;
+    background-color: $blueDark;
+    border-radius: 12px;
+}
+
+.blockPost {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr 2fr 20px;
+    grid-template-areas:
+            "tag date"
+            "header header"
+            "content content"
+            "author comment";
+    padding: 30px;
+}
+
+.image {
+    max-width: 350px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.tag {
+    grid-area: tag;
+    @extend %tag;
+}
+
+.date {
+    grid-area: date;
+    @extend %date;
+}
+
+.header {
+    grid-area: header;
+    @extend %middleHeader;
+}
+
+.description {
+    grid-area: content;
+    padding-top: 10px;
+    @extend %standartFont;
+}
+
+.author {
+    grid-area: author;
+    font-size: 14px;
+}
+
+.comments {
+    grid-area: comment;
+    text-align: right;
+    font-size: 14px;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.cyan {
+    color: $cyan;
+}
+
+.blue {
+    color: $blue;
+}
+
+.lilac {
+    color: $lilac;
+}

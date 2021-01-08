@@ -1,0 +1,24 @@
+@import "../../../Colors";
+@import "../../../Common";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  margin: 25px 0 0 0;
+  @extend %input;
+}
+
+.textarea {
+  width: 100%;
+  @extend %textarea;
+}
+
+.btnBlock {
+  margin-top: 25px;
+}
