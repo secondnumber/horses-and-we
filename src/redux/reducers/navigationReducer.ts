@@ -1,6 +1,25 @@
 import LogoImage from '../../assets/Common/Logo.png';
 
-let initialState = {
+export type InitialStateType = {
+  logo: string;
+  navMenuItems: Array<NavMenuType>;
+  description: string;
+};
+
+export type NavMenuType = {
+  id: number;
+  menuItem: string;
+  menuLink: string;
+  nestedMenu?: Array<NestedMenuType>;
+};
+
+export type NestedMenuType = {
+  id: number;
+  nestedMenuItem: string;
+  nestedMenuLink: string;
+};
+
+const initialState = {
   logo: LogoImage,
   navMenuItems: [
     { id: 1, menuItem: 'Homepage', menuLink: '/' },
@@ -39,7 +58,7 @@ let initialState = {
     'turkey short ribs leberkas doner bacon pancetta buffalo.',
 };
 
-const navigationReducer = (state = initialState, action) => {
+const navigationReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

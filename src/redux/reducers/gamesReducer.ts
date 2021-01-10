@@ -5,7 +5,21 @@ import GameImg4 from '../../assets/Games/game-4.jpg';
 import GameImg5 from '../../assets/Games/game-5.jpg';
 import GameImg6 from '../../assets/Games/game-6.jpg';
 
-let initialState = {
+export type InitialStateType = {
+  gamesOnMain: number;
+  gamesList: Array<GameType>;
+};
+
+export type GameType = {
+  id: number;
+  name: string;
+  tag: string;
+  date: string;
+  image: string;
+  description: string;
+};
+
+const initialState = {
   gamesOnMain: 4,
   gamesList: [
     {
@@ -14,8 +28,7 @@ let initialState = {
       tag: 'XBOX',
       date: 'mar 18-20, 2018',
       image: GameImg1,
-      description:
-        'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken p...',
+      description: 'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken p...',
     },
     {
       id: 2,
@@ -23,8 +36,7 @@ let initialState = {
       tag: 'XBOX',
       date: 'apr 25-27, 2018',
       image: GameImg2,
-      description:
-        'Boudin ground round brisket, andouille ball tip meatloaf beef kevin. Fatback prosciutto.',
+      description: 'Boudin ground round brisket, andouille ball tip meatloaf beef kevin. Fatback prosciutto.',
     },
     {
       id: 3,
@@ -32,8 +44,7 @@ let initialState = {
       tag: 'PS 3',
       date: 'mar 11, 2019',
       image: GameImg3,
-      description:
-        'Cupim biltong pork belly filet mignon sausage turkey. Boudin flank beef ribs spare ribs...',
+      description: 'Cupim biltong pork belly filet mignon sausage turkey. Boudin flank beef ribs spare ribs...',
     },
     {
       id: 4,
@@ -41,8 +52,7 @@ let initialState = {
       tag: 'PS 3',
       date: 'sept 15, 2019',
       image: GameImg4,
-      description:
-        'Chicken shank short loin, pastrami shankle short ribs shoulder frankfurter swine ball t...',
+      description: 'Chicken shank short loin, pastrami shankle short ribs shoulder frankfurter swine ball t...',
     },
     {
       id: 5,
@@ -50,8 +60,7 @@ let initialState = {
       tag: 'XBOX',
       date: 'mar 12, 2019',
       image: GameImg5,
-      description:
-        'Doner tenderloin cupim swine bresaola burgdoggen. Turducken salami rump spare ribs pork...',
+      description: 'Doner tenderloin cupim swine bresaola burgdoggen. Turducken salami rump spare ribs pork...',
     },
     {
       id: 6,
@@ -59,13 +68,12 @@ let initialState = {
       tag: 'PS 3',
       date: 'jun 10-13, 2019',
       image: GameImg6,
-      description:
-        'Pork belly landjaeger kielbasa, spare ribs short ribs short loin turkey capicola veniso...',
+      description: 'Pork belly landjaeger kielbasa, spare ribs short ribs short loin turkey capicola veniso...',
     },
   ],
 };
 
-const gamesReducer = (state = initialState, action) => {
+const gamesReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

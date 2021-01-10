@@ -19,7 +19,7 @@ const MyMap = (props) => {
         defaultZoom={props.mymap.mapZoom}
         styles={props.mymap.mapStyle}
       >
-        <Marker title='Indiega' icon={props.mymap.icon}/>
+        <Marker title="Indiega" icon={props.mymap.icon} />
       </Map>
     </div>
   );

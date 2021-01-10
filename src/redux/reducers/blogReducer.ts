@@ -15,7 +15,54 @@ import postImgMedium4 from '../../assets/BlogPage/PostsImg/blog-img-4.jpg';
 import postImgMedium5 from '../../assets/BlogPage/PostsImg/blog-img-5.jpg';
 import postImgMedium6 from '../../assets/BlogPage/PostsImg/blog-img-6.jpg';
 
-let initialState = {
+export type InitialStateType = {
+  status: Array<UserType>;
+  instaImageList: Array<InstaImageType>;
+  categoriesList: Array<CategoriesType>;
+  twitslist: Array<TwitsType>;
+  postsList: Array<PostsType>;
+};
+
+export type UserType = {
+  id: number;
+  name: string;
+  position: string;
+  avatar: string;
+  text: string;
+};
+
+export type InstaImageType = {
+  id: number;
+  image: string;
+};
+
+export type CategoriesType = {
+  id: number;
+  name: string;
+  counter: number;
+};
+
+export type TwitsType = {
+  id: number;
+  text: string;
+  link: string;
+};
+
+export type PostsType = {
+  id: number;
+  tag: string;
+  header: string;
+  date: string;
+  intro: string;
+  text: string;
+  author: string;
+  comments: number;
+  imgSmall: string;
+  imgMedium: string;
+  imgBig: string;
+};
+
+const initialState = {
   status: [
     {
       id: 1,
@@ -43,14 +90,12 @@ let initialState = {
   twitslist: [
     {
       id: 1,
-      text:
-        'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank.',
+      text: 'Turducken cupim hamburger beef ribs picanha, drumstick buffalo tri-tip cow. Turducken prosciutto shank.',
       link: 'http://t.co/hVbJKs9eRt',
     },
     {
       id: 2,
-      text:
-        'Tongue picanha cow tri-tip, bacon sausage meatloaf kielbasa prosciutto.',
+      text: 'Tongue picanha cow tri-tip, bacon sausage meatloaf kielbasa prosciutto.',
       link: 'http://t.co/hVbJKs9eRt',
     },
   ],
@@ -160,7 +205,7 @@ let initialState = {
   ],
 };
 
-const blogReducer = (state = initialState, action) => {
+const blogReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

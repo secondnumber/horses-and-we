@@ -4,11 +4,7 @@ import Question from './Question/Question';
 
 const Questions = (props) => {
   let questionsList = props.questions.questionsList.map((question) => (
-    <Question
-      id={question.id}
-      question={question.question}
-      answer={question.answer}
-    />
+    <Question key={question.id} id={question.id} question={question.question} answer={question.answer} />
   ));
 
   return (
@@ -18,8 +14,8 @@ const Questions = (props) => {
         <h2 className={classes.subtitle}>you should know this</h2>
       </div>
       <p className={classes.caption}>
-        Corned beef ham frankfurter cow, strip steak shoulder doner flank. Pork
-        chop spare ribs pork ball tip. Prosciutto jowl meatball shank
+        Corned beef ham frankfurter cow, strip steak shoulder doner flank. Pork chop spare ribs pork ball tip.
+        Prosciutto jowl meatball shank
       </p>
       <div className={classes.block}>{questionsList}</div>
     </div>

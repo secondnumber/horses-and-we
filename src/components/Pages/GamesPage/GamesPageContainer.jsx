@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const GamesPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(GamesPage);
+const GamesPageContainer = connect(mapStateToProps, mapDispatchToProps)(GamesPage);
 
 export default GamesPageContainer;

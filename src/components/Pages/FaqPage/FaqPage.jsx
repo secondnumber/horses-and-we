@@ -8,9 +8,9 @@ import Questions from './Question/Question';
 
 const FaqPage = (props) => {
   const submit = (values) => {
-      console.log(values);
-  }
-  let questionsBlock = props.faq.questionsList.map((el) => <Questions key={el.id} title={el.title} list={el.list}/>);
+    console.log(values);
+  };
+  let questionsBlock = props.faq.questionsList.map((el) => <Questions key={el.id} title={el.title} list={el.list} />);
   return (
     <div>
       <HeaderContainer />

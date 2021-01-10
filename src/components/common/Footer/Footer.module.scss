@@ -2,38 +2,38 @@
 @import '../../../Common';
 
 .wrapper {
-    @include wrapper($blueDarkDeep);
-    height: 500px;
-    background-image: url("footer-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  @include wrapper($blueDarkDeep);
+  height: 500px;
+  background-image: url('footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .filter {
-    min-height: 500px;
-    background-color: transparentize($blueDarkDeep, 0.4);
+  min-height: 500px;
+  background-color: transparentize($blueDarkDeep, 0.4);
 }
 
 .block {
-    @include block(70vw, 0, center);
-    min-height: 400px;
+  @include block(70vw, 0, center);
+  min-height: 400px;
 }
 
 .logo {
-    width: 35vw;
+  width: 35vw;
 }
 
 .list {
-    @include list(flex-end, center);
+  @include list(flex-end, center);
 }
 
 .description {
-    padding: 30px 0;
-    text-align: right;
-    @extend %standartFont;
+  padding: 30px 0;
+  text-align: right;
+  @extend %standartFont;
 }
 
 .copyright {
-    @include block(70vw, 20px 0, space-between);
-    border-top: 1px solid $blueLight;
+  @include block(70vw, 20px 0, space-between);
+  border-top: 1px solid $blueLight;
 }

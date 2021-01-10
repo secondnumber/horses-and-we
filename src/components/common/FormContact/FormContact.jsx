@@ -2,11 +2,7 @@ import React from 'react';
 import classes from './FormContact.module.scss';
 import { Field, reduxForm } from 'redux-form';
 import { Input, Textarea } from '../FormControls/Form';
-import {
-  maxLengthCreator,
-  required,
-  validateEmail,
-} from '../../../utils/validators/validators';
+import { maxLengthCreator, required, validateEmail } from '../../../utils/validators/validators';
 import Button from '../Button/Button';
 
 const maxLength10 = maxLengthCreator(10);

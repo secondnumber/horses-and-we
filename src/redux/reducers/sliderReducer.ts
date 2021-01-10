@@ -1,6 +1,25 @@
 import SliderImage1 from '../../assets/Slider/slide-1.jpg';
 
-let initialState = {
+export type InitialStateType = {
+  introList: Array<IntroType>;
+  socialList: Array<SocialType>;
+};
+
+export type IntroType = {
+  id: number;
+  caption: string;
+  header: string;
+  description: string;
+  image: string;
+};
+
+export type SocialType = {
+  id: number;
+  icon: Array<string>;
+  link: string;
+};
+
+const initialState = {
   introList: [
     {
       id: 1,
@@ -19,7 +38,7 @@ let initialState = {
   ],
 };
 
-const sliderReducer = (state = initialState, action) => {
+const sliderReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

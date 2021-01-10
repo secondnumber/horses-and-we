@@ -2,36 +2,35 @@
 @import '../../../../Common';
 
 .wrapper {
-    padding: 50px 0 100px 0;
-    @include wrapper($blueDarkDeep);
+  padding: 50px 0 100px 0;
+  @include wrapper($blueDarkDeep);
 }
 
 .headers {
-    @extend %shadowHeader;
+  @extend %shadowHeader;
 }
 
 .subtitle {
-    @extend %shadowSubtitle;
+  @extend %shadowSubtitle;
 }
 
 .title {
-    @extend %shadowTitle;
+  @extend %shadowTitle;
 }
 
-
 .block {
-    @include block(80vw, 0, space-between, center);
+  @include block(80vw, 0, space-between, center);
 }
 
 .icon {
-    color: $cyan;
-    &:hover {
-        color: $lilac;
-    }
+  color: $cyan;
+  &:hover {
+    color: $lilac;
+  }
 }
 
 .toggle {
-    height: 30px;
-    width: 20px;
-    @extend %toggle;
+  height: 30px;
+  width: 20px;
+  @extend %toggle;
 }

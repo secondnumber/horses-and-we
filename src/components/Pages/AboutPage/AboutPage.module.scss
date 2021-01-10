@@ -1,8 +1,8 @@
-@import "../../../Colors";
-@import "../../../Common";
+@import '../../../Colors';
+@import '../../../Common';
 
 .wrapper {
-  @include  wrapper($blueDarkDeep);
+  @include wrapper($blueDarkDeep);
   background-image: url('../../../assets/AboutPage/about-bg.jpg');
 }
 

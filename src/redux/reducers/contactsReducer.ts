@@ -1,9 +1,20 @@
-import React from 'react';
-import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt, faMapMarkerAlt, faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
-let initialState = {
+export type InitialStateType = {
+  header: string;
+  description: string;
+  contactsItems: Array<ContactsType>;
+};
+
+export type ContactsType = {
+  id: number;
+  name: string;
+  value: string;
+  icon: IconDefinition;
+  color: string;
+};
+
+const initialState = {
   header: 'Contact Information',
   description:
     'Pastrami tail landjaeger porchetta short ribs ham hock, bresaola kevin leberkas. Tenderloin ground round rump swine hamburger. Cupim jerky beef ribs tongue t-bone.',
@@ -32,7 +43,7 @@ let initialState = {
   ],
 };
 
-const contactsPageReducer = (state = initialState, action) => {
+const contactsPageReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

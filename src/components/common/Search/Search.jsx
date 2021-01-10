@@ -8,18 +8,9 @@ import Button from '../Button/Button';
 const Search = (props) => {
   return (
     <form onSubmit={props.handleSubmit} className={classes.form}>
-      <Field
-        className={classes.input}
-        component="input"
-        name="subscribe"
-        type="text"
-        placeholder="Search here..."
-      />
+      <Field className={classes.input} component="input" name="subscribe" type="text" placeholder="Search here..." />
       <div className={classes.button}>
-        <Button
-          name={<FontAwesomeIcon icon={faSearch} />}
-          style={'buttonGradientSquare'}
-        />
+        <Button name={<FontAwesomeIcon icon={faSearch} />} style={'buttonGradientSquare'} />
       </div>
     </form>
   );

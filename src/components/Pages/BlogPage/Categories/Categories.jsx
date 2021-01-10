@@ -5,7 +5,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const Categories = (props) => {
   let categoriesList = props.categories.map((el) => (
-    <li className={classes.item}>
+    <li className={classes.item} key={el}>
       <span className={classes.icon}>
         <FontAwesomeIcon icon={faCheck} />
       </span>

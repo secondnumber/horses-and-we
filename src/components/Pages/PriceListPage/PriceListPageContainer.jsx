@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const PriceListPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PriceListPage);
+const PriceListPageContainer = connect(mapStateToProps, mapDispatchToProps)(PriceListPage);
 
 export default PriceListPageContainer;

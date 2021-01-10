@@ -3,18 +3,13 @@ import classes from './Price.module.scss';
 import Button from '../../Button/Button';
 
 const Price = (props) => {
-  debugger;
   return (
     <div className={classes.wrapper}>
       <h1 className={classes.header}>{props.name}</h1>
       <div
-        className={`${
-          props.color === 'cyan'
-            ? classes.cyan
-            : props.color === 'blue'
-            ? classes.blue
-            : classes.lilac
-        } ${classes.value}`}
+        className={`${props.color === 'cyan' ? classes.cyan : props.color === 'blue' ? classes.blue : classes.lilac} ${
+          classes.value
+        }`}
       >
         <span className={classes.currency}>{props.currency} </span>
         <span className={classes.integer}>{props.integer} </span>

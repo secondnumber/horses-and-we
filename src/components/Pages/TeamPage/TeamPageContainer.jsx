@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const TeamPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TeamPage);
+const TeamPageContainer = connect(mapStateToProps, mapDispatchToProps)(TeamPage);
 
 export default TeamPageContainer;

@@ -2,42 +2,41 @@
 @import '../../../../Common';
 
 .wrapper {
-    @include wrapper($black);
-    padding-bottom: 70px;
+  @include wrapper($black);
+  padding-bottom: 70px;
 }
 
 .headers {
-    @extend %shadowHeader;
+  @extend %shadowHeader;
 }
 
 .subtitle {
-    @extend %shadowSubtitle;
+  @extend %shadowSubtitle;
 }
 
 .title {
-    @extend %shadowTitle;
+  @extend %shadowTitle;
 }
 
-
 .tagsList {
-    @include list(space-around, center);
-    width: 60vw;
-    margin: 0 auto 30px;
+  @include list(space-around, center);
+  width: 60vw;
+  margin: 0 auto 30px;
 }
 
 .imagesList {
-    width: 70vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "left center right"
-        "bottom bottom right";
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    margin: 0 auto 40px;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'left center right'
+    'bottom bottom right';
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin: 0 auto 40px;
 }
 
 .btnBlock {
-    text-align: center;
+  text-align: center;
 }

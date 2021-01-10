@@ -2,24 +2,24 @@
 @import '../../../../Common';
 
 .wrapper {
-    @include wrapper($blueDarkDeep);
-    padding: 100px 0;
+  @include wrapper($blueDarkDeep);
+  padding: 100px 0;
 }
 
 .block {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(90px, auto) 1fr minmax(140px, auto);
-    grid-template-areas:
-        "tag tag tag tag tag tag"
-        "video video video content content content"
-        "video video video label label label";
-    width: 70vw;
-    margin: 0 auto;
-    background: $black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(90px, auto) 1fr minmax(140px, auto);
+  grid-template-areas:
+    'tag tag tag tag tag tag'
+    'video video video content content content'
+    'video video video label label label';
+  width: 70vw;
+  margin: 0 auto;
+  background: $black;
 }
 
 .list {
-    grid-area: tag;
-    @include list(space-around, center);
+  grid-area: tag;
+  @include list(space-around, center);
 }

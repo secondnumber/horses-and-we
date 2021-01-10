@@ -1,5 +1,5 @@
-@import "../../../../../Colors";
-@import "../../../../../Common";
+@import '../../../../../Colors';
+@import '../../../../../Common';
 
 .wrapper {
   max-width: 700px;
@@ -15,10 +15,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20px 1fr 1fr 20px;
   grid-template-areas:
-          "tag date"
-          "header header"
-          "content content"
-          "author comment";
+    'tag date'
+    'header header'
+    'content content'
+    'author comment';
   padding: 30px;
 }
 

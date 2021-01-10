@@ -2,20 +2,20 @@
 @import '../../../../../Common';
 
 .tag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid $blueDark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $blueDark;
 }
 
 .link {
-    display: block;
-    padding: 20px 40px;
-    @extend %linkFont;
+  display: block;
+  padding: 20px 40px;
+  @extend %linkFont;
 }
 
 .active {
-    background: $blueDark;
+  background: $blueDark;
 }

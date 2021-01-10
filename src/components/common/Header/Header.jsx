@@ -7,12 +7,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Header = (props) => {
   let menuItemElements = props.navigation.navMenuItems.map((el) => (
-    <HeaderMenu
-      key={el.id}
-      menuItem={el.menuItem}
-      menuLink={el.menuLink}
-      nestedMenu={el.nestedMenu}
-    />
+    <HeaderMenu key={el.id} menuItem={el.menuItem} menuLink={el.menuLink} nestedMenu={el.nestedMenu} />
   ));
 
   return (

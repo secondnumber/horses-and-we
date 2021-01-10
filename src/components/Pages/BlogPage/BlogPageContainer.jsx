@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const BlogPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BlogPage);
+const BlogPageContainer = connect(mapStateToProps, mapDispatchToProps)(BlogPage);
 
 export default BlogPageContainer;

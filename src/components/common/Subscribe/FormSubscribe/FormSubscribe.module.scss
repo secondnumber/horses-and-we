@@ -2,27 +2,26 @@
 @import '../../../../Common';
 
 .form {
-    position: relative;
+  position: relative;
 }
 
 .input {
-    @extend %input;
-    width: 100%;
+  @extend %input;
+  width: 100%;
 }
 
-
 .button {
-    position: absolute;
-    right: 20px;
-    top: 25%;
-    background-color: transparent;
-    color: $cyan;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 25%;
+  background-color: transparent;
+  color: $cyan;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .button:hover {
-    color: $lilac;
-    cursor: pointer;
+  color: $lilac;
+  cursor: pointer;
 }

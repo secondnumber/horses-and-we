@@ -16,11 +16,7 @@ const Image = (props) => {
           : ''
       }
     >
-      <img
-        className={classes.image}
-        src={props.galleryImages}
-        alt={'Gallery image'}
-      />
+      <img className={classes.image} src={props.galleryImages} alt={'Gallery image'} />
     </div>
   );
 };

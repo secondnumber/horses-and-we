@@ -1,4 +1,21 @@
-let initialState = {
+export type InitialStateType = {
+  pricesList: Array<PriceType>;
+};
+
+export type PriceType = {
+  id: number;
+  name: string;
+  currency: string;
+  integer: string;
+  fraction: string;
+  period: string;
+  color: string;
+  featureOne: string;
+  featureTwo: string;
+  featureThree: string;
+};
+
+const initialState = {
   pricesList: [
     {
       id: 1,
@@ -39,7 +56,7 @@ let initialState = {
   ],
 };
 
-const priceListReducer = (state = initialState, action) => {
+const priceListReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

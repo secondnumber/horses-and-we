@@ -4,9 +4,7 @@ import classes from './Form.module.scss';
 export const Form = ({ input, meta, child, ...props }) => {
   const hasError = meta.touched && meta.error;
   return (
-    <div
-      className={classes.formControl + ' ' + (hasError ? classes.error : '')}
-    >
+    <div className={classes.formControl + ' ' + (hasError ? classes.error : '')}>
       {props.children}
       {hasError && <span className={classes.error}>{meta.error}</span>}
     </div>

@@ -1,4 +1,20 @@
-let initialState = {
+export type InitialStateType = {
+  questionsList: Array<QuestionsType>;
+};
+
+export type QuestionsType = {
+  id: number;
+  title: string;
+  list: Array<QuestionType>;
+};
+
+export type QuestionType = {
+  id: number;
+  caption: string;
+  content: string;
+};
+
+const initialState = {
   questionsList: [
     {
       id: 1,
@@ -99,7 +115,7 @@ let initialState = {
   ],
 };
 
-const faqReducer = (state = initialState, action) => {
+const faqReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

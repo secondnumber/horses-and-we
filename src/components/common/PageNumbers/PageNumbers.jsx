@@ -8,11 +8,9 @@ const PageNumbers = (props) => {
     pages.push(i);
   }
   let pagesItems = pages.map((page) => (
-    <li className={classes.item}>
+    <li className={classes.item} key={page}>
       <button
-        className={
-          props.currentPage === page ? classes.current : classes.button
-        }
+        className={props.currentPage === page ? classes.current : classes.button}
         onClick={() => {
           props.setCurrentPage(page);
         }}
@@ -21,7 +19,7 @@ const PageNumbers = (props) => {
       </button>
     </li>
   ));
-  return <>{ pagesItems }</>;
+  return <>{pagesItems}</>;
 };
 
 export default PageNumbers;

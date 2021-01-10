@@ -1,6 +1,18 @@
 import mapIcon from '../../assets/Map/marker.png';
 
-let initialState = {
+export type InitialStateType = {
+  icon: string;
+  mapCenter: CoordsType;
+  mapZoom: number;
+  mapStyle: any;
+};
+
+export type CoordsType = {
+  lat: number;
+  lng: number;
+};
+
+const initialState = {
   icon: mapIcon,
   mapCenter: { lat: 25.791949, lng: -80.193596 },
   mapZoom: 13,
@@ -239,7 +251,7 @@ let initialState = {
   ],
 };
 
-const mapReducer = (state = initialState, action) => {
+const mapReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

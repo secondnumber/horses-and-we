@@ -7,21 +7,19 @@ import Testimonial from './Testimonial/Testimonial';
 import Button from '../../common/Button/Button';
 
 const TestimonialsPage = (props) => {
-  let testimonialsList = props.testimonials.testimonialsList.map(
-    (testimonial) => {
-      if (testimonial.id <= 4) {
-        return (
-          <Testimonial
-            key={testimonial.id}
-            name={testimonial.name}
-            status={testimonial.status}
-            description={testimonial.description}
-            src={testimonial.src}
-          />
-        );
-      }
+  let testimonialsList = props.testimonials.testimonialsList.map((testimonial) => {
+    if (testimonial.id <= 4) {
+      return (
+        <Testimonial
+          key={testimonial.id}
+          name={testimonial.name}
+          status={testimonial.status}
+          description={testimonial.description}
+          src={testimonial.src}
+        />
+      );
     }
-  );
+  });
 
   return (
     <div>

@@ -2,15 +2,15 @@
 @import '../../../../../Common';
 
 .label {
-    grid-area: label;
-    padding: 0 40px;
+  grid-area: label;
+  padding: 0 40px;
 }
 
 .caption {
-    @extend %middleHeader;
-    padding-bottom: 15px;
+  @extend %middleHeader;
+  padding-bottom: 15px;
 }
 
 .count {
-    @extend %standartFont;
+  @extend %standartFont;
 }

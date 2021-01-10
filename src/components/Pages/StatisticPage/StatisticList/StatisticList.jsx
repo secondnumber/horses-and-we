@@ -7,7 +7,7 @@ const StatisticList = (props) => {
   return (
     <li className={classes.item}>
       <span className={classes.icon}>
-          <FontAwesomeIcon icon={faCheck} />
+        <FontAwesomeIcon icon={faCheck} />
       </span>
       {props.name}
     </li>

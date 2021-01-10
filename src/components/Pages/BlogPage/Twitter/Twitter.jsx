@@ -5,12 +5,18 @@ import { NavLink } from 'react-router-dom';
 
 const Twitter = (props) => {
   let categoriesList = props.twits.map((el) => (
-    <li className={classes.item}>
-      <span className={classes.icon}><FontAwesomeIcon icon={['fab', 'twitter']} /></span>
-      <p className={classes.text}>{el.text}<br /><br />
-          <NavLink className={classes.link} to={'https://twitter.com/'} >
-              /{el.link}
-          </NavLink></p>
+    <li className={classes.item} key={el}>
+      <span className={classes.icon}>
+        <FontAwesomeIcon icon={['fab', 'twitter']} />
+      </span>
+      <p className={classes.text}>
+        {el.text}
+        <br />
+        <br />
+        <NavLink className={classes.link} to={'https://twitter.com/'}>
+          /{el.link}
+        </NavLink>
+      </p>
     </li>
   ));
   return (

@@ -5,6 +5,7 @@ import Price from './Price/Price';
 const PriceList = (props) => {
   let priceList = props.priceList.pricesList.map((price) => (
     <Price
+      key={price.name}
       name={price.name}
       currency={price.currency}
       integer={price.integer}

@@ -18,11 +18,7 @@ class StatisticFilter extends React.Component {
     return (
       <label className={classes.filter}>
         Show
-        <select
-          value={this.state.pageSize}
-          className={classes.select}
-          onChange={this.handleChange}
-        >
+        <select value={this.state.pageSize} className={classes.select} onChange={this.handleChange}>
           <option value={10}>10</option>
           <option value={25}>25</option>
           <option value={50}>50</option>

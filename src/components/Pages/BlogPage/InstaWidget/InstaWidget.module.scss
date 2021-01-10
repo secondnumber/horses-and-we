@@ -1,10 +1,10 @@
-@import "../../../../Colors";
-@import "../../../../Common";
+@import '../../../../Colors';
+@import '../../../../Common';
 
 .header {
   padding-bottom: 20px;
   text-align: center;
-  @extend  %middleHeader;
+  @extend %middleHeader;
 }
 
 .list {

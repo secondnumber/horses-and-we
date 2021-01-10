@@ -5,7 +5,9 @@ import { NavLink } from 'react-router-dom';
 const FooterNav = (props) => {
   return (
     <li>
-      <NavLink to={props.menuLink} className={classes.item} activeClassName={classes.active}>{props.menuItem}</NavLink>
+      <NavLink to={props.menuLink} className={classes.item} activeClassName={classes.active}>
+        {props.menuItem}
+      </NavLink>
     </li>
   );
 };

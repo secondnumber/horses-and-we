@@ -4,12 +4,7 @@ import Crumb from './Crumb/Crumb';
 
 const Breadcrumbs = (props) => {
   let crumbsList = props.breadcrumbs.crumbsList.map((element) => (
-    <Crumb
-      key={element.id}
-      name={element.name}
-      link={element.link}
-      separator={element.separator}
-    />
+    <Crumb key={element.id} name={element.name} link={element.link} separator={element.separator} />
   ));
   return (
     <div className={classes.wrapper}>

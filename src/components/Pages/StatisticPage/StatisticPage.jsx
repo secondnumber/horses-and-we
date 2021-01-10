@@ -8,26 +8,16 @@ import StatisticFilter from './StatisticFilter/StatisticFilter';
 import StatisticSearch from './StatisticSearch/StatisticSearch';
 import StatisticData from './StatisticData/StatisticData';
 import PageNumbersContainer from './PageNumbers/PageNumbersGontainer';
-import StatisticFilterContainer from "./StatisticFilter/StatisticFilterContainer";
+import StatisticFilterContainer from './StatisticFilter/StatisticFilterContainer';
 
 const StatisticPage = (props) => {
-  const statisticList = props.statistic.statisticList.map((el) => (
-    <StatisticList key={el.id} name={el.item} />
-  ));
+  const statisticList = props.statistic.statisticList.map((el) => <StatisticList key={el.id} name={el.item} />);
 
   const dataTable = props.statistic.statisticData.map((el, index) => {
     let pageSize = props.statistic.pageSize;
     let currentPage = props.statistic.currentPage;
-    if ((index >= currentPage * pageSize - pageSize) && (index <= pageSize * currentPage - 1)) {
-      return (
-        <StatisticData
-          key={el.id}
-          name={el.name}
-          position={el.position}
-          age={el.age}
-          date={el.startDate}
-        />
-      );
+    if (index >= currentPage * pageSize - pageSize && index <= pageSize * currentPage - 1) {
+      return <StatisticData key={el.id} name={el.name} position={el.position} age={el.age} date={el.startDate} />;
     }
   });
   return (

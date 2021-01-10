@@ -3,8 +3,8 @@ import classes from './InstaWidget.module.scss';
 
 const InstaWidget = (props) => {
   let imagesList = props.images.map((el) => (
-    <li className={classes.item}>
-      <img className={classes.image} src={el.image} alt={'Insta image'}/>
+    <li className={classes.item} key={el}>
+      <img className={classes.image} src={el.image} alt={'Insta image'} />
     </li>
   ));
   return (

@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const FaqPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FaqPage);
+const FaqPageContainer = connect(mapStateToProps, mapDispatchToProps)(FaqPage);
 
 export default FaqPageContainer;

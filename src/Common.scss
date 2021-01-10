@@ -1,4 +1,4 @@
-@import "./Colors";
+@import './Colors';
 
 @mixin wrapper($background) {
   width: 100vw;
@@ -36,7 +36,7 @@
   top: 50px;
   width: 100%;
   text-align: center;
-  font-family: "Agency FB", sans-serif;
+  font-family: 'Agency FB', sans-serif;
   font-size: 88px;
   font-weight: 700;
   text-transform: uppercase;
@@ -48,7 +48,7 @@
   z-index: 2;
   width: 100%;
   text-align: center;
-  font-family: "Agency FB", sans-serif;
+  font-family: 'Agency FB', sans-serif;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
 }
 
 %hugeHeader {
-  font-family: "Agency FB", sans-serif;
+  font-family: 'Agency FB', sans-serif;
   font-size: 80px;
   font-weight: bold;
   text-transform: uppercase;
@@ -137,7 +137,7 @@
   max-width: 565px;
   background-color: $black;
   border-radius: 12px;
-  background-image: url("./assets/Common/quote-left.svg");
+  background-image: url('./assets/Common/quote-left.svg');
   background-repeat: no-repeat;
   background-position: top right;
 }

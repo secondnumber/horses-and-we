@@ -4,11 +4,26 @@ import MemeberImage3 from '../../assets/TeamPage/team-3.jpg';
 import MemeberImage4 from '../../assets/TeamPage/team-4.jpg';
 import MemeberImage5 from '../../assets/TeamPage/team-5.jpg';
 import MemeberImage6 from '../../assets/TeamPage/team-6.jpg';
-import Facebook from '../../assets/TeamPage/facebook.png';
-import Twitter from '../../assets/TeamPage/twitter.png';
-import Google from '../../assets/TeamPage/google.png';
 
-let initialState = {
+export type InitialStateType = {
+  teamList: Array<TeamType>;
+};
+
+export type TeamType = {
+  id: number;
+  image: string;
+  name: string;
+  rank: string;
+  social: Array<SocialType>;
+};
+
+export type SocialType = {
+  id: number;
+  icon: Array<string>;
+  link: string;
+};
+
+const initialState = {
   teamList: [
     {
       id: 1,
@@ -79,7 +94,7 @@ let initialState = {
   ],
 };
 
-const teamPageReducer = (state = initialState, action) => {
+const teamPageReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

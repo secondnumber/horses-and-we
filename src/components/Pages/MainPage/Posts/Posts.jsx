@@ -5,6 +5,7 @@ import Post from './Post/Post';
 const Posts = (props) => {
   let postsList = props.posts.postsList.map((post) => (
     <Post
+      key={post.description}
       name={post.name}
       tag={post.tag}
       date={post.date}
@@ -23,8 +24,8 @@ const Posts = (props) => {
         <h2 className={classes.title}>Our latest Posts:</h2>
       </div>
       <p className={classes.description}>
-        Pork chop pastrami meatball, picanha salami capicola drumstick tri-tip
-        flank short loin strip steak prosciutto leberkas jowl fatback.
+        Pork chop pastrami meatball, picanha salami capicola drumstick tri-tip flank short loin strip steak prosciutto
+        leberkas jowl fatback.
       </p>
       <ul className={classes.block}>{postsList}</ul>
     </div>

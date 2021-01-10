@@ -4,9 +4,7 @@ import SocialInSlider from './SocialInSlider/SocialItem';
 import Button from '../../../../common/Button/Button';
 
 const Intro = (props) => {
-  let socialList = props.slider.socialList.map((el) => (
-    <SocialInSlider key={el.id} icon={el.icon} link={el.link} />
-  ));
+  let socialList = props.slider.socialList.map((el) => <SocialInSlider key={el.id} icon={el.icon} link={el.link} />);
   return (
     <div className={classes.wrapper}>
       <div className={classes.wrapperToggle}>

@@ -15,9 +15,6 @@ let mapDispatchToProps = (dispatch) => {
 
 const GalleryPageWithRouter = withRouter(GalleryPage);
 
-const GalleryPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(GalleryPageWithRouter);
+const GalleryPageContainer = connect(mapStateToProps, mapDispatchToProps)(GalleryPageWithRouter);
 
 export default GalleryPageContainer;

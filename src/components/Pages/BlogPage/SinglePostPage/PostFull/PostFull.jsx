@@ -16,19 +16,15 @@ const PostFull = (props) => {
           <span className={classes.date}>MAR 14, 2018</span>
         </div>
         <p className={classes.text}>
-          Brisket pig pork belly beef porchetta filet mignon pork loin capicola
-          ribeye cow picanha. Bresaola leberkas pork loin, shank hamburger chuck
-          andouille cupim fatback alcatra turkey flank bacon. Bresaola pork loin
-          fatback meatloaf turducken pork belly andouille ham hock picanha.
-          Pancetta sausage cow, spare ribs flank kevin hamburger tri-tip rump
-          pork loin alcatra jerky pig tenderloin. Meatloaf jowl tail doner
-          ground. <br />
+          Brisket pig pork belly beef porchetta filet mignon pork loin capicola ribeye cow picanha. Bresaola leberkas
+          pork loin, shank hamburger chuck andouille cupim fatback alcatra turkey flank bacon. Bresaola pork loin
+          fatback meatloaf turducken pork belly andouille ham hock picanha. Pancetta sausage cow, spare ribs flank kevin
+          hamburger tri-tip rump pork loin alcatra jerky pig tenderloin. Meatloaf jowl tail doner ground. <br />
           <br />
-          Brisket ham hock chuck cupim andouille beef ribs turducken pork belly.
-          Picanha filet mignon tenderloin venison sirloin biltong. Picanha jerky
-          venison chuck, filet mignon sirloin t-bone rump short loin salami pork
-          loin tenderloin corned beef swine ground round. Ball tip rump
-          prosciutto ham. Sirloin venison jowl brisket shank andouille.
+          Brisket ham hock chuck cupim andouille beef ribs turducken pork belly. Picanha filet mignon tenderloin venison
+          sirloin biltong. Picanha jerky venison chuck, filet mignon sirloin t-bone rump short loin salami pork loin
+          tenderloin corned beef swine ground round. Ball tip rump prosciutto ham. Sirloin venison jowl brisket shank
+          andouille.
         </p>
         <div className={classes.images}>
           <img className={classes.image} src={Img1} />
@@ -36,11 +32,10 @@ const PostFull = (props) => {
           <img className={classes.image} src={Img3} />
         </div>
         <p className={classes.text}>
-          Brisket ham hock chuck cupim andouille beef ribs turducken pork belly.
-          Picanha filet mignon tenderloin venison sirloin biltong. Picanha jerky
-          venison chuck, filet mignon sirloin t-bone rump short loin salami pork
-          loin tenderloin corned beef swine ground round. Ball tip rump
-          prosciutto ham. Sirloin venison jowl brisket shank andouille.
+          Brisket ham hock chuck cupim andouille beef ribs turducken pork belly. Picanha filet mignon tenderloin venison
+          sirloin biltong. Picanha jerky venison chuck, filet mignon sirloin t-bone rump short loin salami pork loin
+          tenderloin corned beef swine ground round. Ball tip rump prosciutto ham. Sirloin venison jowl brisket shank
+          andouille.
         </p>
       </div>
     </div>

@@ -13,9 +13,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const ContactsPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ContactsPage);
+const ContactsPageContainer = connect(mapStateToProps, mapDispatchToProps)(ContactsPage);
 
 export default ContactsPageContainer;

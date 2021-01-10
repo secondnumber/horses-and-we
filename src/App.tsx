@@ -20,7 +20,7 @@ import StatisticPageContainer from './components/Pages/StatisticPage/StatisticPa
 
 library.add(fab);
 
-const App = (props) => (
+const App = () => (
   <div>
     <Switch>
       <Route exact path="/">

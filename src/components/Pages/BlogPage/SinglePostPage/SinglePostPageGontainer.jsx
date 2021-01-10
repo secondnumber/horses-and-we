@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const SinglePostPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(SinglePostPage);
+const SinglePostPageContainer = connect(mapStateToProps, mapDispatchToProps)(SinglePostPage);
 
 export default SinglePostPageContainer;

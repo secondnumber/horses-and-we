@@ -6,20 +6,18 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Testimonials = (props) => {
-  let testimonialsList = props.testimonials.testimonialsList.map(
-    (testimonial) => {
-      if (testimonial.id <= 2) {
-        return (
-          <Testimonial
-            name={testimonial.name}
-            status={testimonial.status}
-            description={testimonial.description}
-            imageSmall={testimonial.src}
-          />
-        );
-      }
+  let testimonialsList = props.testimonials.testimonialsList.map((testimonial) => {
+    if (testimonial.id <= 2) {
+      return (
+        <Testimonial
+          name={testimonial.name}
+          status={testimonial.status}
+          description={testimonial.description}
+          imageSmall={testimonial.src}
+        />
+      );
     }
-  );
+  });
 
   return (
     <div className={classes.wrapper}>

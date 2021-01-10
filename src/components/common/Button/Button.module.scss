@@ -1,5 +1,5 @@
-@import "../../../Colors";
-@import "../../../Common";
+@import '../../../Colors';
+@import '../../../Common';
 
 .buttonGradient {
   @include button(200px, linear-gradient(90deg, $cyan, $lilac), $cyan, none, none, $white, $white);

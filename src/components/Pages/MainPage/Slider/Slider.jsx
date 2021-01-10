@@ -5,6 +5,7 @@ import IntroContainer from './Intro/IntroContainer';
 const Slider = (props) => {
   let introBlocks = props.slider.introList.map((element) => (
     <IntroContainer
+      key={element.header}
       caption={element.caption}
       header={element.header}
       description={element.description}

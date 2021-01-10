@@ -7,14 +7,7 @@ import Team from './Team/Team';
 
 const TeamPage = (props) => {
   let teamList = props.teamPage.teamList.map((el) => (
-    <Team
-      key={el.id}
-      id={el.id}
-      name={el.name}
-      image={el.image}
-      rank={el.rank}
-      social={el.social}
-    />
+    <Team key={el.id} id={el.id} name={el.name} image={el.image} rank={el.rank} social={el.social} />
   ));
   return (
     <div>

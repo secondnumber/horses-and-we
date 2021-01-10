@@ -2,16 +2,16 @@
 @import '../../../../../Common';
 
 .block {
-    grid-area: content;
-    padding: 40px;
+  grid-area: content;
+  padding: 40px;
 }
 
 .header {
-    padding-bottom: 30px;
-    @extend %middleHeader;
+  padding-bottom: 30px;
+  @extend %middleHeader;
 }
 
 .description {
-    padding-bottom: 30px;
-    @extend %standartFont;
+  padding-bottom: 30px;
+  @extend %standartFont;
 }

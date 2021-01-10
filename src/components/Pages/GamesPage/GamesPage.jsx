@@ -7,14 +7,7 @@ import Game from './Game/Game';
 
 const GamesPage = (props) => {
   let gamesList = props.games.gamesList.map((el) => (
-    <Game
-      key={el.id}
-      tag={el.tag}
-      name={el.name}
-      date={el.date}
-      description={el.description}
-      image={el.image}
-    />
+    <Game key={el.id} tag={el.tag} name={el.name} date={el.date} description={el.description} image={el.image} />
   ));
 
   return (

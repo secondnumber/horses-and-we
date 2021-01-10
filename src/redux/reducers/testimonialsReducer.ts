@@ -7,7 +7,19 @@ import Testimonial6 from '../../assets/Testimonials/testimonial-6.jpg';
 import Testimonial7 from '../../assets/Testimonials/testimonial-7.jpg';
 import Testimonial8 from '../../assets/Testimonials/testimonial-8.jpg';
 
-let initialState = {
+export type InitialStateType = {
+  testimonialsList: Array<TestimonialType>;
+};
+
+export type TestimonialType = {
+  id: number;
+  name: string;
+  status: string;
+  description: string;
+  src: string;
+};
+
+const initialState = {
   testimonialsList: [
     {
       id: 1,
@@ -81,7 +93,7 @@ let initialState = {
   ],
 };
 
-const testimonialsReducer = (state = initialState, action) => {
+const testimonialsReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   return state;
 };
 

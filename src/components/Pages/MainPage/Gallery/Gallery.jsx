@@ -5,12 +5,10 @@ import Image from './Image/Image';
 import Button from '../../../common/Button/Button';
 
 const Gallery = (props) => {
-  let tagsList = props.gallery.galleryTags.map((tag) => (
-    <Tag galleryTag={tag.tag} />
-  ));
+  let tagsList = props.gallery.galleryTags.map((tag) => <Tag key={tag} galleryTag={tag.tag} />);
 
   let imagesList = props.gallery.galleryImgPreview.map((image) => (
-    <Image galleryImages={image.src} position={image.position} />
+    <Image galleryImages={image.src} position={image.position} key={image} />
   ));
 
   return (

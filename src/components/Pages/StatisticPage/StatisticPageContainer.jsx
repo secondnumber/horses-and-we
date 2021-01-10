@@ -12,9 +12,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const StatisticPageContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(StatisticPage);
+const StatisticPageContainer = connect(mapStateToProps, mapDispatchToProps)(StatisticPage);
 
 export default StatisticPageContainer;

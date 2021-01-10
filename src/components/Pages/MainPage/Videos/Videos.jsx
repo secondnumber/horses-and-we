@@ -7,27 +7,23 @@ import Label from './Label/Label';
 
 const Videos = (props) => {
   let togglesList = props.videos.togglesItems.map((toggle) => (
-    <Toggle toggleClass={toggle.toggleClass} toggleItem={toggle.toggleItem} />
+    <Toggle key={toggle.toggleItem} toggleClass={toggle.toggleClass} toggleItem={toggle.toggleItem} />
   ));
 
-  let videosList = props.videos.videosItems.map((video) => (
-    <Video file={video.file} />
-  ));
+  let videosList = props.videos.videosItems.map((video) => <Video key={video} file={video.file} />);
 
   let contentList = props.videos.videosItems.map((content) => (
-    <Content header={content.header} descriprion={content.descriprion} />
+    <Content key={content.header} header={content.header} descriprion={content.descriprion} />
   ));
 
   let labelList = props.videos.videosItems.map((label) => (
-    <Label caption={label.caption} count={label.count} />
+    <Label key={label.caption} caption={label.caption} count={label.count} />
   ));
 
   return (
     <div className={classes.wrapper}>
       <div className={classes.block}>
-        <ul className={classes.list}>
-          {togglesList}
-        </ul>
+        <ul className={classes.list}>{togglesList}</ul>
         {videosList}
         {contentList}
         {labelList}

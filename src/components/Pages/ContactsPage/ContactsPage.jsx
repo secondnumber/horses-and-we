@@ -13,18 +13,10 @@ const ContactsPage = (props) => {
     console.log(values);
   };
 
-  let socialList = props.social.socialList.map((item) => (
-    <Social key={item.id} icon={item.icon} link={item.link} />
-  ));
+  let socialList = props.social.socialList.map((item) => <Social key={item.id} icon={item.icon} link={item.link} />);
 
   let contactList = props.contacts.contactsItems.map((item) => (
-    <Contact
-      key={item.id}
-      icon={item.icon}
-      name={item.name}
-      value={item.value}
-      color={item.color}
-    />
+    <Contact key={item.id} icon={item.icon} name={item.name} value={item.value} color={item.color} />
   ));
 
   return (

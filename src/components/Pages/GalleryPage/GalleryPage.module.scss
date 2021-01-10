@@ -1,5 +1,5 @@
-@import "../../../Colors";
-@import "../../../Common";
+@import '../../../Colors';
+@import '../../../Common';
 
 .extraWrapper {
   position: relative;
@@ -29,6 +29,3 @@
 .numbersList {
   @include list(center, center);
 }
-
-
-

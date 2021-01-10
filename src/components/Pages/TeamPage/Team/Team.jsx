@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Team = (props) => {
   let socialList = props.social.map((el) => (
-    <li className={classes.item}>
+    <li className={classes.item} key={el}>
       <NavLink to={el.link} className={classes.link}>
         <FontAwesomeIcon icon={el.icon} />
       </NavLink>
@@ -15,7 +15,7 @@ const Team = (props) => {
     <li className={classes.block}>
       <div className={classes.imageBlock}>
         <NavLink to={props.id}>
-          <img className={classes.image} src={props.image} alt={props.name}/>
+          <img className={classes.image} src={props.image} alt={props.name} />
         </NavLink>
       </div>
       <NavLink to={props.id} className={classes.name}>

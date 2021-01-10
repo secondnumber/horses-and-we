@@ -5,13 +5,7 @@ import Post from './Post/Post';
 
 const BlogContent = (props) => {
   let status = props.status.map((el) => (
-    <Status
-      key={el.id}
-      name={el.name}
-      position={el.position}
-      avatar={el.avatar}
-      text={el.text}
-    />
+    <Status key={el.id} name={el.name} position={el.position} avatar={el.avatar} text={el.text} />
   ));
   let postsList = props.posts.map((el) => (
     <Post
@@ -46,9 +40,6 @@ let mapDispatchToProps = (dispatch) => {
   return {};
 };
 
-const BlogContentContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(BlogContent);
+const BlogContentContainer = connect(mapStateToProps, mapDispatchToProps)(BlogContent);
 
 export default BlogContentContainer;

@@ -23,12 +23,7 @@ const AboutPage = (props) => {
   ));
 
   let achievementsItems = props.aboutPage.achievementsItems.map((element) => (
-    <Achievements
-      key={element.id}
-      counter={element.counter}
-      label={element.label}
-      image={element.image}
-    />
+    <Achievements key={element.id} counter={element.counter} label={element.label} image={element.image} />
   ));
   return (
     <div>

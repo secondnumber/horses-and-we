@@ -2,23 +2,39 @@
 @import '../../../../../Common';
 
 @keyframes slidetop {
-  0% { transform: translateY(-100vh); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes slideleft {
-  0% { transform: translateX(-100vw); }
-  100% { transform: translateX(0px); }
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 @keyframes slidebottom {
-   0% { transform: translateY(100vw); }
-   100% { transform: translateY(0px); }
- }
+  0% {
+    transform: translateY(100vw);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 @keyframes appear {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .wrapper {

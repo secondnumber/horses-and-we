@@ -1,5 +1,5 @@
-@import "../../../../Colors";
-@import "../../../../Common";
+@import '../../../../Colors';
+@import '../../../../Common';
 
 .wrapper {
   width: 100%;
@@ -8,5 +8,5 @@
 .header {
   padding-bottom: 20px;
   text-align: center;
-  @extend  %middleHeader;
+  @extend %middleHeader;
 }

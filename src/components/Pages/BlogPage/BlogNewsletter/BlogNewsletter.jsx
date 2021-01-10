@@ -12,10 +12,7 @@ const BlogNewsletter = (props) => {
       <div className={classes.block}>
         <FormSubscribe onSubmit={submit} />
       </div>
-      <p>
-        Subscribe to our Newsletter right now to be updated. We promice not to
-        spam!
-      </p>
+      <p>Subscribe to our Newsletter right now to be updated. We promice not to spam!</p>
     </div>
   );
 };

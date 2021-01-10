@@ -2,10 +2,10 @@
 @import '../../../../Common';
 
 .item {
-    padding: 0px 0px 40px 30px;
-    @extend %linkFont;
+  padding: 0px 0px 40px 30px;
+  @extend %linkFont;
 }
 
 .active {
-    color: $lilac;
+  color: $lilac;
 }

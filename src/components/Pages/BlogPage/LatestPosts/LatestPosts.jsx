@@ -7,11 +7,7 @@ const LatestPosts = (props) => {
     if (index <= 2) {
       return (
         <li className={classes.item}>
-          <img
-            className={classes.image}
-            src={el.imgSmall}
-            alt={'Post preview image'}
-          />
+          <img className={classes.image} src={el.imgSmall} alt={'Post preview image'} />
           <div className={classes.content}>
             <NavLink className={classes.link} to={el.id}>
               <h3 className={classes.title}>{el.header}</h3>

@@ -11,11 +11,7 @@ const ScrollButton = (props) => {
 
   return (
     <div className={classes.wrapper}>
-      <Button
-        name={<FontAwesomeIcon icon={faArrowUp} />}
-        style={'buttonGradientSquare'}
-        buttonHandler={scrollUp}
-      />
+      <Button name={<FontAwesomeIcon icon={faArrowUp} />} style={'buttonGradientSquare'} buttonHandler={scrollUp} />
     </div>
   );
 };

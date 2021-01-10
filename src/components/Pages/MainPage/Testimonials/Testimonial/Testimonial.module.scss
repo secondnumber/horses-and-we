@@ -2,32 +2,32 @@
 @import '../../../../../Common';
 
 .wrapper {
-    @extend %quoteBlock;
+  @extend %quoteBlock;
 }
 
 .image {
-    position: absolute;
-    top: -60px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
 
 .header {
-    padding-top: 80px;
-    text-align: center;
-    @extend %middleHeader;
+  padding-top: 80px;
+  text-align: center;
+  @extend %middleHeader;
 }
 
 .status {
-    padding-top: 10px;
-    text-align: center;
-    @extend %tag;
+  padding-top: 10px;
+  text-align: center;
+  @extend %tag;
 }
 
 .description {
-    padding: 20px 30px 40px 30px;
-    text-align: center;
-    @extend %standartFont;
-    line-height: 180%;
+  padding: 20px 30px 40px 30px;
+  text-align: center;
+  @extend %standartFont;
+  line-height: 180%;
 }

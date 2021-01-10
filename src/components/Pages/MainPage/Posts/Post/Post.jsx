@@ -10,13 +10,7 @@ const Post = (props) => {
       <div className={classes.blockPost}>
         <span className={classes.tag}>
           <span
-            className={
-              props.color === 'blue'
-                ? classes.blue
-                : props.color === 'lilac'
-                ? classes.lilac
-                : classes.cyan
-            }
+            className={props.color === 'blue' ? classes.blue : props.color === 'lilac' ? classes.lilac : classes.cyan}
           >
             {props.tag}
           </span>
@@ -26,13 +20,7 @@ const Post = (props) => {
         <p className={classes.description}>{props.description}</p>
         <span className={classes.author}>
           <span
-            className={
-              props.color === 'blue'
-                ? classes.blue
-                : props.color === 'lilac'
-                ? classes.lilac
-                : classes.cyan
-            }
+            className={props.color === 'blue' ? classes.blue : props.color === 'lilac' ? classes.lilac : classes.cyan}
           >
             <FontAwesomeIcon icon={faUser} />
           </span>
@@ -40,13 +28,7 @@ const Post = (props) => {
         </span>
         <span className={classes.comments}>
           <span
-            className={
-              props.color === 'blue'
-                ? classes.blue
-                : props.color === 'lilac'
-                ? classes.lilac
-                : classes.cyan
-            }
+            className={props.color === 'blue' ? classes.blue : props.color === 'lilac' ? classes.lilac : classes.cyan}
           >
             <FontAwesomeIcon icon={faComment} />
           </span>

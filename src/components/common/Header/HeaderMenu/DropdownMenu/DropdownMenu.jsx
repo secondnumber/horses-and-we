@@ -4,12 +4,8 @@ import { NavLink } from 'react-router-dom';
 
 const DropdownMenu = (props) => {
   let nestedMenuList = props.nestedMenu.map((el) => (
-    <li className={classes.item}>
-      <NavLink
-        to={el.nestedMenuLink}
-        className={classes.link}
-        activeClassName={classes.active}
-      >
+    <li className={classes.item} key={el}>
+      <NavLink to={el.nestedMenuLink} className={classes.link} activeClassName={classes.active}>
         {el.nestedMenuItem}
       </NavLink>
     </li>

@@ -2,46 +2,46 @@
 @import '../../../../Common';
 
 .wrapper {
-    max-width: 350px;
-    background-color: $blueDark;
-    border-radius: 12px;
-    margin: 30px 0;
+  max-width: 350px;
+  background-color: $blueDark;
+  border-radius: 12px;
+  margin: 30px 0;
 }
 
 .blockPost {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 1fr 2fr 20px;
-    grid-template-areas:
-            "tag date"
-            "header header"
-            "content content"
-            "author .";
-    padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20px 1fr 2fr 20px;
+  grid-template-areas:
+    'tag date'
+    'header header'
+    'content content'
+    'author .';
+  padding: 30px;
 }
 
 .image {
-    max-width: 350px;
-    border-radius: 12px 12px 0px 0px;
+  max-width: 350px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .tag {
-    @extend %tag;
-    grid-area: tag;
+  @extend %tag;
+  grid-area: tag;
 }
 
 .date {
-    @extend %date;
+  @extend %date;
 }
 
 .header {
-    grid-area: header;
-    @extend %middleHeader;
-    text-align: left;
+  grid-area: header;
+  @extend %middleHeader;
+  text-align: left;
 }
 
 .description {
-    grid-area: content;
-    padding-top: 10px;
-    @extend %standartFont;
+  grid-area: content;
+  padding-top: 10px;
+  @extend %standartFont;
 }

@@ -2,19 +2,19 @@
 @import '../../../../../Common';
 
 .image {
-    width: 180px;
-    height: 180px;
-    background-color: $blueDarkDeep;
-    border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background-color: $blueDarkDeep;
+  border-radius: 50%;
 }
 
 .header {
-    padding: 25px 0 5px 0;
-    text-align: center;
-    @extend %middleHeader;
+  padding: 25px 0 5px 0;
+  text-align: center;
+  @extend %middleHeader;
 }
 
 .date {
-    @extend %date;
-    text-align: center;
+  @extend %date;
+  text-align: center;
 }

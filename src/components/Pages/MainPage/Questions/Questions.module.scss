@@ -2,31 +2,31 @@
 @import '../../../../Common';
 
 .wrapper {
-    @include wrapper($blueDarkDeep);
-    padding: 40px 0 80px 0;
+  @include wrapper($blueDarkDeep);
+  padding: 40px 0 80px 0;
 }
 
 .block {
-    @include block(70vw, 0, center);
-    flex-wrap: wrap;
+  @include block(70vw, 0, center);
+  flex-wrap: wrap;
 }
 
 .headers {
-    @extend %shadowHeader;
+  @extend %shadowHeader;
 }
 
 .subtitle {
-    @extend %shadowSubtitle;
+  @extend %shadowSubtitle;
 }
 
 .title {
-    @extend %shadowTitle;
+  @extend %shadowTitle;
 }
 
 .caption {
-    padding-bottom: 50px;
-    max-width: 40vw;
-    margin: 0 auto;
-    text-align: center;
-    @extend %standartFont;
+  padding-bottom: 50px;
+  max-width: 40vw;
+  margin: 0 auto;
+  text-align: center;
+  @extend %standartFont;
 }

@@ -19,7 +19,35 @@ import ImgBig2 from '../../assets/GalleryPage/image-2.jpg';
 
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE';
 
-let initialState = {
+export type InitialStateType = {
+  galleryImgPreview: Array<GalleryImgPreviewType>;
+  galleryTags: Array<GalleryTagsType>;
+  galleryImages: Array<GalleryImagesType>;
+  pageSize: number;
+  totalImagesCount: number;
+  currentPage: number;
+};
+
+export type GalleryImgPreviewType = {
+  id: number;
+  position: string;
+  src: string;
+};
+
+export type GalleryTagsType = {
+  id: number;
+  tag: string;
+};
+
+export type GalleryImagesType = {
+  id: number;
+  imgSmall: string;
+  imgBig: string;
+  tag: string;
+  title: string;
+};
+
+const initialState = {
   galleryImgPreview: [
     { id: 1, position: 'left', src: Img1 },
     { id: 2, position: 'center', src: Img2 },
@@ -125,7 +153,7 @@ let initialState = {
   currentPage: 1,
 };
 
-const galleryReducer = (state = initialState, action) => {
+const galleryReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
   switch (action.type) {
     case SET_CURRENT_PAGE: {
       return {
@@ -137,7 +165,12 @@ const galleryReducer = (state = initialState, action) => {
   return state;
 };
 
-export const setCurrentPage = (pageNumber) => ({
+export type SetCurrentPageActionType = {
+  type: typeof SET_CURRENT_PAGE;
+  pageNumber: number;
+};
+
+export const setCurrentPage = (pageNumber: number) => ({
   type: SET_CURRENT_PAGE,
   pageNumber,
 });

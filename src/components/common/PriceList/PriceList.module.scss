@@ -2,21 +2,21 @@
 @import '../../../Common';
 
 .wrapper {
-    @include wrapper($black);
+  @include wrapper($black);
 }
 
 .block {
-    @include block(70vw, 0 0 80px 0, space-between);
+  @include block(70vw, 0 0 80px 0, space-between);
 }
 
 .header {
-    @extend %shadowHeader;
+  @extend %shadowHeader;
 }
 
 .subtitle {
-    @extend %shadowSubtitle;
+  @extend %shadowSubtitle;
 }
 
 .title {
-    @extend %shadowTitle;
+  @extend %shadowTitle;
 }
