@@ -1,15 +1,11 @@
 import mapIcon from '../../assets/Map/marker.png';
+import { IMapProps } from 'google-maps-react';
 
 export type InitialStateType = {
   icon: string;
-  mapCenter: CoordsType;
+  mapCenter: any;
   mapZoom: number;
   mapStyle: any;
-};
-
-export type CoordsType = {
-  lat: number;
-  lng: number;
 };
 
 const initialState = {

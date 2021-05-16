@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './TeamPage.module.scss';
-import HeaderContainer from '../../common/Header/HeaderContainer';
-import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
-import FooterContainer from '../../common/Footer/FooterContainer';
+import HeaderContainer from '../../common/Header';
+import BreadcrumbsContainer from '../../common/Breadcrumbs';
+import FooterContainer from '../../common/Footer';
 import Team from './Team/Team';
 
 const TeamPage = (props) => {

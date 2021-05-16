@@ -2,10 +2,22 @@ import React from 'react';
 import classes from './Footer.module.scss';
 import Social from '../SocialList/Social';
 import FooterNav from './FooterNav/FooterNav';
+import { NavMenuType } from '../../../redux/reducers/navigationReducer';
+import { SocialType } from '../../../redux/reducers/socialReducer';
 
-const Footer = (props) => {
-  let socialList = props.social.socialList.map((item) => <Social key={item.id} icon={item.icon} link={item.link} />);
-  let navMenu = props.navigation.navMenuItems.map((item) => (
+type Props = {
+  logo: string;
+  navMenuItems: Array<NavMenuType>;
+  descriptionNav: string;
+  socialListItems: Array<SocialType>;
+  descriptionSocial: string;
+};
+
+const Footer: React.FC<Props> = ({ logo, navMenuItems, descriptionNav, socialListItems, descriptionSocial }) => {
+  const socialList = socialListItems.map((item: SocialType) => (
+    <Social key={item.id} icon={item.icon} link={item.link} />
+  ));
+  const navMenu = navMenuItems.map((item: NavMenuType) => (
     <FooterNav key={item.id} menuItem={item.menuItem} menuLink={item.menuLink} />
   ));
 
@@ -14,11 +26,11 @@ const Footer = (props) => {
       <div className={classes.filter}>
         <div className={classes.block}>
           <div className={classes.logo}>
-            <img src={props.navigation.logo} alt={'Logo'} />
+            <img src={logo} alt={'Logo'} />
           </div>
           <div>
             <ul className={classes.list}>{navMenu}</ul>
-            <p className={classes.description}>{props.navigation.description}</p>
+            <p className={classes.description}>{descriptionNav}</p>
             <ul className={classes.list}>{socialList}</ul>
           </div>
         </div>

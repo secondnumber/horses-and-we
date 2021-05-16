@@ -1,22 +1,27 @@
 import React from 'react';
-import classes from './FormFaq.module.scss';
-import { Field, reduxForm } from 'redux-form';
+import classes from './FormContact.module.scss';
+import { Field, reduxForm, SubmitHandler } from 'redux-form';
 import { Input, Textarea } from '../FormControls/Form';
 import { maxLengthCreator, required, validateEmail } from '../../../utils/validators/validators';
 import Button from '../Button/Button';
 
+const maxLength10 = maxLengthCreator(10);
 const maxLength40 = maxLengthCreator(40);
 const maxLength300 = maxLengthCreator(300);
 
-const FormFaq = (props) => {
+type Props = {
+  handleSubmit: SubmitHandler<Record<string, unknown>>;
+};
+
+const FormContact: React.FC<Props> = ({ handleSubmit }) => {
   return (
-    <form action="" onSubmit={props.handleSubmit}>
+    <form action="" className={classes.form} onSubmit={handleSubmit}>
       <Field
         className={classes.input}
         component={Input}
         name="name"
         type="text"
-        placeholder="your name"
+        placeholder="full name"
         validate={[required, maxLength40]}
       />
       <Field
@@ -30,28 +35,36 @@ const FormFaq = (props) => {
       <Field
         className={classes.input}
         component={Input}
+        name="phone"
+        type="text"
+        placeholder="phone number"
+        validate={[required, maxLength10]}
+      />
+      <Field
+        className={classes.input}
+        component={Input}
         name="subject"
         type="text"
         placeholder="subject"
         validate={[required, maxLength40]}
       />
       <Field
-        component={Textarea}
         className={classes.textarea}
+        component={Textarea}
         name="message"
-        id=""
+        type="textarea"
         cols="30"
         rows="10"
-        placeholder="your question"
+        placeholder="your message..."
         validate={[required, maxLength300]}
       />
       <div className={classes.btnBlock}>
-        <Button />
+        <Button name={'Send message'} />
       </div>
     </form>
   );
 };
 
 export default reduxForm({
-  form: 'faq',
-})(FormFaq);
+  form: 'contact',
+})(FormContact);

@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './TestimonialsPage.module.scss';
-import HeaderContainer from '../../common/Header/HeaderContainer';
-import BreadcrumbsContainer from '../../common/Breadcrumbs/BreadcrumbsContainer';
-import FooterContainer from '../../common/Footer/FooterContainer';
+import HeaderContainer from '../../common/Header';
+import BreadcrumbsContainer from '../../common/Breadcrumbs';
+import FooterContainer from '../../common/Footer';
 import Testimonial from './Testimonial/Testimonial';
 import Button from '../../common/Button/Button';
 
