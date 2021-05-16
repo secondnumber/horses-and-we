@@ -1,7 +1,12 @@
 import React from 'react';
 import classes from './Form.module.scss';
 
-export const Form = ({ input, meta, child, ...props }) => {
+type Props = {
+  input?: React.FC;
+  meta?: any;
+};
+
+export const Form: React.FC<Props> = ({ meta, ...props }) => {
   const hasError = meta.touched && meta.error;
   return (
     <div className={classes.formControl + ' ' + (hasError ? classes.error : '')}>
@@ -11,8 +16,8 @@ export const Form = ({ input, meta, child, ...props }) => {
   );
 };
 
-export const Textarea = (props) => {
-  const { input, meta, child, ...restProps } = props;
+export const Textarea: React.FC<Props> = (props) => {
+  const { input, ...restProps } = props;
   return (
     <Form {...props}>
       <textarea {...input} {...restProps} />
@@ -20,8 +25,8 @@ export const Textarea = (props) => {
   );
 };
 
-export const Input = (props) => {
-  const { input, meta, child, ...restProps } = props;
+export const Input: React.FC<Props> = (props) => {
+  const { input, ...restProps } = props;
   return (
     <Form {...props}>
       <input {...input} {...restProps} />

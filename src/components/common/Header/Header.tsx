@@ -4,16 +4,23 @@ import HeaderMenu from './HeaderMenu/HeaderMenu';
 import Button from '../Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { NavMenuType } from '../../../redux/reducers/navigationReducer';
 
-const Header = (props) => {
-  let menuItemElements = props.navigation.navMenuItems.map((el) => (
+type Props = {
+  navMenuItems: NavMenuType[];
+  logo: string;
+};
+
+const Header: React.FC<Props> = ({ navMenuItems, logo }) => {
+  console.log(navMenuItems);
+  const menuItemElements = navMenuItems.map((el: NavMenuType) => (
     <HeaderMenu key={el.id} menuItem={el.menuItem} menuLink={el.menuLink} nestedMenu={el.nestedMenu} />
   ));
 
   return (
     <div className={classes.header}>
       <div className={classes.logo}>
-        <img className={classes.image} src={props.navigation.logo} />
+        <img className={classes.image} src={logo} />
         <div>
           <p className={classes.title}>indiega</p>
           <p className={classes.label}>gaming solutions</p>

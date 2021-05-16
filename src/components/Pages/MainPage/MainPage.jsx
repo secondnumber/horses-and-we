@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderContainer from '../../common/Header/HeaderContainer';
+import HeaderContainer from '../../common/Header';
 import SliderContainer from './Slider/SliderContainer';
 import GamesContainer from './Games/GamesContainer';
 import PostsContainer from './Posts/PostsContainer';
@@ -9,7 +9,7 @@ import VideosContainer from './Videos/VideosContainer';
 import PriceListContainer from '../../common/PriceList/PriceListContainer';
 import QuestionsContainer from './Questions/QuestionsContainer';
 import FormSubscribe from '../../common/Subscribe/Subscribe';
-import FooterContainer from '../../common/Footer/FooterContainer';
+import FooterContainer from '../../common/Footer';
 import ScrollButtonContainer from '../../common/ScrollButton/ScrollButtonContainer';
 import classes from './MainPage.module.scss';
 

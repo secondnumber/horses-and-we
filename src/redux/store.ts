@@ -19,10 +19,10 @@ import mapReducer from './reducers/mapReducer';
 import commonReducer from './reducers/commonReducer';
 import faqReducer from './reducers/faqReducer';
 import blogReducer from './reducers/blogReducer';
-import { reducer as formReducer } from 'redux-form';
 import statisticReducer from './reducers/statisticReducer';
+import { reducer as formReducer } from 'redux-form';
 
-let reducers = combineReducers({
+const rootReducer = combineReducers({
   aboutPage: aboutPageReducer,
   breadcrumbs: breadcrumbsReducer,
   social: socialReducer,
@@ -47,6 +47,9 @@ let reducers = combineReducers({
   form: formReducer,
 });
 
-let store = createStore(reducers);
+type RootReducerType = typeof rootReducer;
+export type AppStateType = ReturnType<RootReducerType>;
+
+const store = createStore(rootReducer);
 
 export default store;

@@ -1,9 +1,13 @@
 import React from 'react';
 import classes from './Loader.module.scss';
 
-const Loader = (props) => (
+type Props = {
+  icon: string;
+};
+
+const Loader: React.FC<Props> = ({ icon }) => (
   <div className={classes.loader}>
-    <img className={classes.image} src={props.icon} alt="" />
+    <img className={classes.image} src={icon} alt="" />
   </div>
 );
 
